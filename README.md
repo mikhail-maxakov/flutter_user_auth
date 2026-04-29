@@ -1,16 +1,104 @@
-# user_app
+# 📱 Flutter User App
 
-A new Flutter project.
+[![Flutter Version](https://img.shields.io/badge/Flutter-3.38.6-blue)](https://flutter.dev/)
+[![Dart Version](https://img.shields.io/badge/Dart-3.10.7-blue)](https://dart.dev/)
+[![License](https://img.shields.io/badge/License-Educational-brightgreen)](LICENSE)
 
-## Getting Started
+**Flutter-приложение** с авторизацией пользователей и локальным сохранением данных. Разработано в рамках учебной дисциплины **«3306.ФЛТ.26В Flutter»**.
 
-This project is a starting point for a Flutter application.
+##  О проекте
 
-A few resources to get you started if this is your first Flutter project:
+Приложение демонстрирует:
+- ✅ Создание моделей данных (`UserModel`)
+- ✅ Локальное хранение данных с `shared_preferences`
+- ✅ Экран авторизации с валидацией полей
+- ✅ Главный экран с отображением данных пользователя
+- ✅ Выход из аккаунта
+- ✅ Автоматическое определение авторизации при запуске
 
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
+##  Функционал
 
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+| Функция | Описание |
+|---------|----------|
+|  **Авторизация** | Ввод имени и email с валидацией |
+|  **Сохранение** | Данные сохраняются локально через `shared_preferences` |
+|  **Профиль** | Отображение имени и email пользователя |
+|  **Выход** | Очистка данных и переход на экран авторизации |
+|  **Автовход** | При повторном запуске сразу открывается профиль |
+
+##  Технологии
+
+- **Flutter** — кроссплатформенный фреймворк
+- **Dart** — язык программирования
+- **shared_preferences** — локальное хранилище данных
+- **Material 3** — современный дизайн
+
+##  Структура проекта
+lib/
+├── main.dart # Точка входа, маршрутизация
+├── models/
+│ └── user_model.dart # Модель пользователя
+├── screens/
+│ ├── auth_screen.dart # Экран авторизации
+│ └── profile_screen.dart # Экран профиля
+└── services/
+└── storage_service.dart # Сервис для работы с SharedPreferences
+
+text
+
+##  Запуск проекта
+
+### 1. Клонирование репозитория
+
+```bash
+git clone https://github.com/mikhail-maxakov/flutter_user_auth.git
+cd flutter_user_auth
+2. Установка зависимостей
+bash
+flutter pub get
+3. Запуск приложения
+bash
+flutter run -d chrome     # Веб-версия
+# или
+flutter run -d windows    # Windows-версия
+ Скриншоты
+Экран авторизации	Экран профиля
+https://screenshots/auth_screen.png	https://screenshots/profile_screen.png
+Добавьте скриншоты в папку screenshots/ для наглядности
+
+ Демонстрация работы
+Первый запуск → экран авторизации
+
+Ввод данных → Имя и Email
+
+Нажатие "Войти" → переход в профиль
+
+Закрытие и повторный запуск → сразу профиль (данные сохранены)
+
+Нажатие "Выйти" → возврат на экран авторизации
+
+ Цель работы
+Освоение следующих тем:
+
+Создание моделей данных
+
+Работа с shared_preferences
+
+Навигация между экранами
+
+Stateful виджеты и управление состоянием
+
+ Автор
+Преподаватель: Максаков Михаил
+Колледж: ITHUB
+Дисциплина: 3306.ФЛТ.26В Flutter
+Контрольная точка: КТ № 5 — Создание моделей пользователя
+
+ Лицензия
+Проект создан в образовательных целях.
+Материал предназначен для студентов колледжа ITHUB.
+
+⭐ Данный проект подготовлен преподавателем для студентов в рамках освоения дисциплины Flutter.
+
+
+
