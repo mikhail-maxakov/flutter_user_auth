@@ -1,8 +1,5 @@
-# 📱 Flutter User App
+#  Flutter User App
 
-[![Flutter Version](https://img.shields.io/badge/Flutter-3.38.6-blue)](https://flutter.dev/)
-[![Dart Version](https://img.shields.io/badge/Dart-3.10.7-blue)](https://dart.dev/)
-[![License](https://img.shields.io/badge/License-Educational-brightgreen)](LICENSE)
 
 **Flutter-приложение** с авторизацией пользователей и локальным сохранением данных. Разработано в рамках учебной дисциплины **«3306.ФЛТ.26В Flutter»**.
 
@@ -33,18 +30,7 @@
 - **shared_preferences** — локальное хранилище данных
 - **Material 3** — современный дизайн
 
-##  Структура проекта
-lib/
-├── main.dart # Точка входа, маршрутизация
-├── models/
-│ └── user_model.dart # Модель пользователя
-├── screens/
-│ ├── auth_screen.dart # Экран авторизации
-│ └── profile_screen.dart # Экран профиля
-└── services/
-└── storage_service.dart # Сервис для работы с SharedPreferences
 
-text
 
 ##  Запуск проекта
 
